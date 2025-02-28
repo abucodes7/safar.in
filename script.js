@@ -11,6 +11,16 @@ closeBtn.addEventListener('click', () => {
   chatbotWindow.style.display = 'none';
 });
 
+// Continue Without Login
+const continueWithoutLoginBtn = document.getElementById('continue-without-login');
+const loginPage = document.querySelector('.login-page');
+const userInputForm = document.querySelector('.user-input-form');
+
+continueWithoutLoginBtn.addEventListener('click', () => {
+  loginPage.style.display = 'none';
+  userInputForm.style.display = 'block';
+});
+
 // Trip Form Submission
 document.getElementById('trip-form').addEventListener('submit', (e) => {
   e.preventDefault();
