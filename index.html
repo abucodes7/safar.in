@@ -12,72 +12,22 @@
   <!-- Blurred Background -->
   <div class="blurred-background"></div>
 
-  <!-- Navbar -->
-  <nav>
-    <div class="logo">SAFAR.IN</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#destinations">Destinations</a></li>
-      <li><a href="#ai-assistant">AI Assistant</a></li>
-      <li><a href="#login">Login</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Your Personalized AI Travel Assistant</h1>
-      <p>Explore India like never before with SAFAR.IN. Get budget-friendly, personalized travel plans.</p>
-      <div class="search-bar">
-        <input type="text" placeholder="Where do you want to go?" id="search-input">
-        <button id="search-btn">Search</button>
-      </div>
+  <!-- Login Page -->
+  <div class="login-page">
+    <div class="login-box">
+      <h2>Welcome to SAFAR.IN</h2>
+      <form id="login-form">
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#">Sign Up</a></p>
+      <button id="continue-without-login">Continue Without Login</button>
     </div>
-  </section>
+  </div>
 
-  <!-- Destinations Section -->
-  <section id="destinations" class="destinations">
-    <h2>Popular Destinations in India</h2>
-    <div class="destination-grid">
-      <div class="destination-card">
-        <img src="https://images.unsplash.com/photo-1593696140827-c58b021acf8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amFpcHVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Jaipur">
-        <h3>Jaipur</h3>
-        <p>The Pink City</p>
-      </div>
-      <div class="destination-card">
-        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29hfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Goa">
-        <h3>Goa</h3>
-        <p>Beaches & Nightlife</p>
-      </div>
-      <div class="destination-card">
-        <img src="https://images.unsplash.com/photo-1583417319078-6d17b0c0aa53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2VyYWxhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Kerala">
-        <h3>Kerala</h3>
-        <p>Backwaters & Serenity</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- AI Assistant Section -->
-  <section id="ai-assistant" class="ai-assistant">
-    <h2>AI-Powered Travel Planning</h2>
-    <div class="ai-features">
-      <div class="feature">
-        <h3>Budget Planning</h3>
-        <p>Get personalized budget plans for your trip.</p>
-      </div>
-      <div class="feature">
-        <h3>Itinerary Generator</h3>
-        <p>AI creates the perfect itinerary for you.</p>
-      </div>
-      <div class="feature">
-        <h3>Local Recommendations</h3>
-        <p>Discover hidden gems and local favorites.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- User Input Form -->
-  <section id="user-input" class="user-input-form">
+  <!-- User Input Form (Hidden Initially) -->
+  <div class="user-input-form hidden">
     <h2>Plan Your Trip</h2>
     <form id="trip-form">
       <div class="form-group">
@@ -98,7 +48,7 @@
       </div>
       <button type="submit">Plan My Trip</button>
     </form>
-  </section>
+  </div>
 
   <!-- Floating Chatbot -->
   <div class="chatbot">
@@ -119,11 +69,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2023 SAFAR.IN. All rights reserved.</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
