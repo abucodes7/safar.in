@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAFAR.IN - AI Travel Assistant</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Blurred Background -->
+  <div class="blurred-background"></div>
+
+  <!-- Login Page -->
+  <div class="login-page">
+    <div class="login-box">
+      <h2>Welcome to SAFAR.IN</h2>
+      <form id="login-form">
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
+  </div>
+
+  <!-- Floating Chatbot -->
+  <div class="chatbot">
+    <div class="chatbot-icon">
+      <i class="fas fa-robot"></i>
+    </div>
+    <div class="chatbot-window">
+      <div class="chatbot-header">
+        <h3>Travel Assistant</h3>
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="chatbot-body">
+        <p>Hi! How can I assist you today?</p>
+      </div>
+      <div class="chatbot-input">
+        <input type="text" placeholder="Type a message...">
+        <button><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- User Input Form -->
+  <div class="user-input-form">
+    <h2>Plan Your Trip</h2>
+    <form id="trip-form">
+      <div class="form-group">
+        <label for="source">Source</label>
+        <input type="text" id="source" placeholder="Enter source city" required>
+      </div>
+      <div class="form-group">
+        <label for="destination">Destination</label>
+        <input type="text" id="destination" placeholder="Enter destination city" required>
+      </div>
+      <div class="form-group">
+        <label for="date">Travel Date</label>
+        <input type="date" id="date" required>
+      </div>
+      <div class="form-group">
+        <label for="budget">Budget (₹)</label>
+        <input type="number" id="budget" placeholder="Enter your budget" required>
+      </div>
+      <button type="submit">Plan My Trip</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
