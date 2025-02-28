@@ -11,12 +11,6 @@ closeBtn.addEventListener('click', () => {
   chatbotWindow.style.display = 'none';
 });
 
-// Login Form Submission
-document.getElementById('login-form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  alert('Login successful!');
-});
-
 // Trip Form Submission
 document.getElementById('trip-form').addEventListener('submit', (e) => {
   e.preventDefault();
